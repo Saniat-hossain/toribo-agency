@@ -1,0 +1,1 @@
+Tool logos: Simple Icons v13.21.0, https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/ . CC0 package; see ../simple-icons-LICENSE.txt. Trademarks belong to their respective owners. Logos identify tools, not partnerships.

@@ -668,3 +668,6 @@ footer{background:var(--v50)}
 
 .consult-details{display:block;margin-top:18px}
 .consult-privacy{font-size:9.5px;line-height:1.6;margin-top:10px}
+
+.consult-other{display:block;margin-top:14px}
+.consult-other input{font-size:11.5px!important}

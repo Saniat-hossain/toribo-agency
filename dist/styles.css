@@ -447,7 +447,7 @@ footer{background:var(--v50)}
 .automation-deliverables span{background:#9B8AF029;border:1px solid #9B8AF04D;color:var(--v100);padding:6px 13px;border-radius:999px;font:500 11.5px/1.4 var(--sans);letter-spacing:.01em;transition:background .2s,border-color .2s}.automation-deliverables span:hover{background:#9B8AF040;border-color:#9B8AF070}
 .automation-actions{text-align:center;margin-top:34px;display:flex;align-items:center;flex-direction:column;gap:12px}
 .automation-actions .button{background:var(--v600);color:white;border:1px solid var(--v400);box-shadow:0 8px 22px #5B32E833;padding:14px 22px;border-radius:10px;font:600 14px var(--sans)}
-.automation-actions>p{color:var(--v400);font:400 12px/1.6 var(--sans);margin:0}
+.automation-actions>p{color:var(--v100);font:500 18px/1.6 var(--sans);letter-spacing:-.01em;margin:6px 0 0}
 .automation-pause{color:var(--v100);font:400 12px/1.5 var(--sans);cursor:pointer;padding:5px 10px;border-radius:5px;text-decoration:underline;text-underline-offset:4px}
 .automation-motion-toggle{position:absolute;width:1px;height:1px;opacity:0}
 .when-paused{display:none}

@@ -28,7 +28,8 @@ let brief='';
 form.addEventListener('submit',event=>{
  event.preventDefault();
  const data=new FormData(form);
- brief=`TORIBO AGENCY — FREE BUSINESS ANALYSIS BRIEF\n\nName: ${data.get('name').trim()}\nEmail: ${data.get('email').trim()}\nWhatsApp: ${data.get('phone').trim() || 'Not provided'}\nInterested in: ${data.get('interest')}\n\nWhat I would like to improve:\n${data.get('problem').trim()}\n\nPrepared locally. No booking or enquiry has been submitted.\n`;
+ brief=`TORIBO AGENCY — FREE BUSINESS ANALYSIS BRIEF\n\nName: ${data.get('name').trim()}\nEmail: ${data.get('email').trim()}\nWhatsApp: ${data.get('phone').trim() || 'Not provided'}\nInterested in: ${data.get('interest')}
+Rough budget: ${data.get('budget') || 'Not specified'}\n\nWhat I would like to improve:\n${data.get('problem').trim()}\n\nPrepared locally. No booking or enquiry has been submitted.\n`;
  document.getElementById('brief-status').textContent='Your brief is ready. Download a copy to share with the Toribo team.';
  result.hidden=false;
 });

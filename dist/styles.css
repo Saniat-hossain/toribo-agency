@@ -634,3 +634,18 @@ footer{background:var(--v50)}
 .solution h3{transition:color .25s}
 .solution:hover h3{color:var(--v700)}
 @media(max-width:760px){.solutions-bottom{flex-direction:column;align-items:flex-start;gap:18px;padding:22px}.solutions-bottom p>span{font-size:18px}.solutions-cta{width:100%;justify-content:center}}
+
+/* --- FAQ: card-style accordion --- */
+.faqs{display:grid;gap:12px}
+.faq-item{border:1px solid color-mix(in srgb,var(--v400) 22%,transparent)!important;border-radius:16px;background:color-mix(in srgb,var(--v900) 55%,transparent);overflow:hidden;transition:border-color .25s,background .25s,transform .25s}
+.faq-item:hover{border-color:color-mix(in srgb,var(--v400) 55%,transparent)!important;background:color-mix(in srgb,var(--v900) 85%,transparent)}
+.faq-item:has([aria-expanded=true]){border-color:var(--v400)!important;background:color-mix(in srgb,var(--v600) 16%,var(--v900))}
+.faq-button{padding:20px 22px!important;font:500 15.5px/1.5 var(--sans)!important;gap:18px!important;align-items:flex-start!important}
+.faq-button>span{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:color-mix(in srgb,var(--v400) 18%,transparent);border:1px solid color-mix(in srgb,var(--v400) 40%,transparent);font-size:16px!important;line-height:1;color:var(--v100)!important;transition:background .25s,border-color .25s,transform .25s;margin-top:-2px}
+.faq-item:has([aria-expanded=true]) .faq-button>span{background:var(--v600);border-color:var(--v400);color:#fff!important;transform:rotate(180deg)}
+.faq-answer p{padding:0 22px 22px!important;font-size:14.5px!important;line-height:1.75;color:var(--v100);max-width:62ch!important}
+.motion-ready .faqs.is-visible .faq-item{animation:faq-in .5s cubic-bezier(.2,.65,.3,1) backwards;animation-delay:var(--faq-delay,0ms)}
+@keyframes faq-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.faq-layout>div:first-child{align-self:start}
+@media(min-width:901px){.faq-layout>div:first-child{position:sticky;top:104px}}
+@media(prefers-reduced-motion:reduce){.motion-ready .faqs.is-visible .faq-item{animation:none}}

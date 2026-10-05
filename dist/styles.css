@@ -465,24 +465,24 @@ footer{background:var(--v50)}
 
 /* Why choose Toribo — service-led benefits bento. */
 .toribo-benefits{background:var(--bg);padding:80px 0 90px}
-.benefit-wrap{width:min(1040px,calc(100% - 64px))}
+.benefit-wrap{width:min(1240px,calc(100% - 56px))}
 .benefits-heading{text-align:center;margin:0 auto 42px}
 .benefits-eyebrow{display:inline-block;border:1px solid var(--v300);border-radius:30px;color:var(--v600);padding:7px 13px;font:500 11px/1.4 var(--sans);letter-spacing:.08em;margin:0 0 18px}
 .benefits-heading h2{font-size:clamp(34px,3.7vw,52px);line-height:1.15;letter-spacing:-.04em;margin:0 0 16px}
 .benefits-heading>p:last-child{font:400 16px/1.6 var(--sans);color:var(--muted);margin:0}
-.benefits-bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.benefits-bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px}
 .benefit-tile{position:relative;overflow:hidden;border-radius:20px;min-width:0;border:1px solid #1B11450A;transition:transform .3s ease,box-shadow .3s ease}
-.benefit-analysis,.benefit-connected{grid-column:span 6;min-height:340px}
-.benefit-tile-copy{position:relative;z-index:1;padding:25px 26px 0}
+.benefit-analysis,.benefit-connected{grid-column:span 6;min-height:385px}
+.benefit-tile-copy{position:relative;z-index:1;padding:32px 34px 0}
 .benefit-number{display:block;font:500 10px/1.5 var(--sans);letter-spacing:.1em;color:var(--v700);margin-bottom:10px}
-.benefit-tile h3{font:600 23px/1.3 var(--heading);letter-spacing:-.035em;margin:0 0 10px;color:var(--v950)}
+.benefit-tile h3{font:600 26px/1.28 var(--heading);letter-spacing:-.035em;margin:0 0 12px;color:var(--v950)}
 .benefit-tile p{font:400 15px/1.65 var(--sans);margin:0;color:var(--v900)}
 .benefit-analysis{background:var(--v100)}
 .benefit-analysis-art{position:absolute;width:100%;height:100%;inset:0;object-fit:cover;object-position:center bottom}
-.benefit-analysis .benefit-tile-copy p{max-width:380px}
+.benefit-analysis .benefit-tile-copy p{max-width:460px}
 .benefit-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
 .benefit-tags>span{padding:6px 10px;border-radius:7px;background:#FFFFFFA6;color:var(--v900);font:500 11px/1.4 var(--sans)}
-.benefit-analysis-link{position:absolute;bottom:24px;left:26px;display:inline-flex;align-items:center;gap:9px;color:var(--v600);font:600 13.5px var(--sans);text-decoration:none;background:#FFFFFFF2;border:1px solid color-mix(in srgb,var(--v600) 20%,transparent);padding:13px 20px;border-radius:999px;box-shadow:0 6px 18px -9px #5B32E866;transition:transform .2s,box-shadow .25s,background .25s,color .25s,border-color .25s}.benefit-analysis-link:hover{background:var(--v600);color:#fff;border-color:var(--v600);transform:translateY(-2px);box-shadow:0 14px 28px -8px #5B32E8A6}.benefit-analysis-link span{transition:transform .2s}.benefit-analysis-link:hover span{transform:translateX(3px)}
+.benefit-analysis-link{position:absolute;bottom:30px;left:34px;display:inline-flex;align-items:center;gap:9px;color:var(--v600);font:600 13.5px var(--sans);text-decoration:none;background:#FFFFFFF2;border:1px solid color-mix(in srgb,var(--v600) 20%,transparent);padding:13px 20px;border-radius:999px;box-shadow:0 6px 18px -9px #5B32E866;transition:transform .2s,box-shadow .25s,background .25s,color .25s,border-color .25s}.benefit-analysis-link:hover{background:var(--v600);color:#fff;border-color:var(--v600);transform:translateY(-2px);box-shadow:0 14px 28px -8px #5B32E8A6}.benefit-analysis-link span{transition:transform .2s}.benefit-analysis-link:hover span{transform:translateX(3px)}
 .benefit-analysis-link:focus-visible{outline:3px solid var(--v400);outline-offset:3px}
 .benefit-connected{background:var(--blue)}
 .benefit-workflow{margin:20px 20px 0;background:var(--v950);color:var(--v50);border-radius:12px 12px 0 0;border:1px solid var(--v400);box-shadow:0 12px 26px #1B11451A;overflow:hidden}
@@ -494,7 +494,7 @@ footer{background:var(--v50)}
 .benefit-flow-row b{font:500 12px/1.5 var(--sans);display:block}
 .benefit-flow-row div>span{font:400 10px/1.5 var(--sans);color:var(--v400);display:block;margin-top:2px}
 .benefit-flow-status{font:400 9px var(--sans);color:var(--v100);border:1px solid #9B8AF040;padding:4px 6px;border-radius:5px}
-.benefit-support{grid-column:span 4;background:var(--v600);min-height:325px}
+.benefit-support{grid-column:span 4;background:var(--v600);min-height:370px}
 .benefit-support h3,.benefit-support p{color:white}
 .benefit-support .benefit-number{color:var(--v100)}
 .benefit-support-panel{margin:24px 20px 0;padding:18px;background:var(--v950);border:1px solid var(--v400);border-radius:12px 12px 0 0;box-shadow:0 0 18px #EAE7FC26}
@@ -502,7 +502,7 @@ footer{background:var(--v50)}
 .benefit-support-panel ul{list-style:none;margin:13px 0 14px;padding:0;display:grid;gap:8px}
 .benefit-support-panel li{padding:8px 10px;background:var(--v900);border-radius:6px;font:400 11px/1.45 var(--sans);color:var(--v50);border-left:2px solid var(--v300)}
 .benefit-support-panel>span{font:400 10px/1.5 var(--sans);color:var(--v400)}
-.benefit-people{grid-column:span 8;background:var(--v100);display:grid;grid-template-columns:1.06fr 1fr;gap:24px;padding:22px}
+.benefit-people{grid-column:span 8;background:var(--v100);display:grid;grid-template-columns:1.06fr 1fr;gap:30px;padding:28px}
 .benefit-experts{align-self:center;background:white;padding:17px 13px;border-radius:13px;box-shadow:0 10px 30px #1B11450D}
 .benefit-experts>p{font:600 14px/1.5 var(--heading);letter-spacing:-.02em;margin:0 0 10px}
 .benefit-experts>div{display:flex;gap:9px;align-items:center;padding:12px 0;border-bottom:1px solid var(--border)}
@@ -520,7 +520,7 @@ footer{background:var(--v50)}
 .benefit-people .benefit-tags>span{font-size:10px;padding:5px 7px}
 @media(hover:hover){.benefit-tile:hover{transform:translateY(-4px);box-shadow:0 18px 34px #1B11450F}}
 @media(max-width:1000px){.benefit-wrap{width:calc(100% - 40px)}.benefit-people{gap:16px;padding:18px}.expert-tag{display:none}.benefit-tile-copy{padding:23px 22px 0}.benefit-tile h3{font-size:21px}.benefit-support-panel{margin-left:14px;margin-right:14px;padding:14px}}
-@media(max-width:760px){.toribo-benefits{padding:58px 0}.benefit-wrap{width:calc(100% - 36px)}.benefits-heading{margin-bottom:30px}.benefits-bento{grid-template-columns:1fr;gap:16px}.benefit-tile{grid-column:auto}.benefit-analysis{min-height:340px}.benefit-support{min-height:0}.benefit-support-panel{margin:24px 22px 0}.benefit-people{grid-template-columns:1fr 1fr;padding:20px;gap:18px}.benefit-tile h3{font-size:23px}.benefit-tile p{font-size:15px}.benefit-experts>p{font-size:13px}.benefit-people-copy h3{font-size:24px}.benefit-experts small{font-size:10px}.benefit-experts b{font-size:12px}.benefit-people-copy>p{font-size:14px}.benefit-location strong{font-size:17px}}
+@media(max-width:760px){.toribo-benefits{padding:58px 0}.benefit-wrap{width:calc(100% - 36px)}.benefits-heading{margin-bottom:30px}.benefits-bento{grid-template-columns:1fr;gap:16px}.benefit-tile{grid-column:auto}.benefit-analysis{min-height:385px}.benefit-support{min-height:0}.benefit-support-panel{margin:24px 22px 0}.benefit-people{grid-template-columns:1fr 1fr;padding:20px;gap:18px}.benefit-tile h3{font-size:23px}.benefit-tile p{font-size:15px}.benefit-experts>p{font-size:13px}.benefit-people-copy h3{font-size:24px}.benefit-experts small{font-size:10px}.benefit-experts b{font-size:12px}.benefit-people-copy>p{font-size:14px}.benefit-location strong{font-size:17px}}
 @media(max-width:480px){.benefit-people{grid-template-columns:1fr}.benefit-people-copy{grid-row:1}.benefit-experts{padding:18px}.expert-tag{display:block;font-size:10px}.benefit-experts b{font-size:13px}.benefit-experts small{font-size:11px}.benefit-experts img{width:40px;height:40px}.benefit-flow-status{display:none}}
 @media(prefers-reduced-motion:reduce){.benefit-tile{transition:none}.benefit-tile:hover{transform:none}}
 .benefit-analysis-art{top:auto;height:68%;object-position:center bottom}

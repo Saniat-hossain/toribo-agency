@@ -135,7 +135,7 @@ th:nth-child(2),td:nth-child(2){background:var(--accent-soft)}
 /* Shared violet roles — final component assignments. */
 body{color:var(--v950)}
 .eyebrow,h1 em,h2 em,.accent,.package-icon,.benefit-grid article>span,.process span,.stars{color:var(--v600)}
-a:not(.btn):not(.button):not(.brand):not(.approach-cta):not(.benefit-analysis-link):not(.bottom-nav a):hover{color:var(--v700)}
+a:not(.btn):not(.button):not(.brand):not(.approach-cta):not(.benefit-analysis-link):not(.solutions-cta):not(.bottom-nav a):hover{color:var(--v700)}
 button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline-color:var(--focus-ring)}
 .btn.ink,.btn.primary,.featured .btn,.bottom-nav .nav-cta{background:var(--v600);color:var(--card);border-color:var(--v600)}
 .btn.ink:hover,.btn.primary:hover,.featured .btn:hover,.bottom-nav .nav-cta:hover{background:var(--v700);color:var(--card);border-color:var(--v700)}
@@ -621,3 +621,16 @@ footer{background:var(--v50)}
 @media(max-width:700px){.approach-cell-label{font-size:10.5px}.approach-rowicon{width:46px;height:46px;border-radius:13px}}
 
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;background:none!important}
+
+/* --- solutions section: closing CTA band + card polish --- */
+.solutions-bottom{display:flex;align-items:center;justify-content:space-between;gap:26px;margin-top:22px;padding:26px 30px;background:var(--card);border:1px solid var(--border);border-radius:18px}
+.solutions-bottom p{font:400 14px/1.7 var(--sans);color:var(--muted);margin:0}
+.solutions-bottom p>span{display:block;font:600 20px/1.4 var(--heading);color:var(--v950);letter-spacing:-.025em;margin-bottom:4px}
+.solutions-cta{display:inline-flex;align-items:center;gap:9px;flex-shrink:0;background:var(--v600);color:#fff;border-radius:999px;padding:14px 22px;font:600 13.5px/1 var(--sans);text-decoration:none;box-shadow:0 10px 26px -10px #5B32E8B3;transition:background .22s,transform .22s,box-shadow .22s}
+.solutions-cta:hover{background:var(--v700);color:#fff;transform:translateY(-2px);box-shadow:0 15px 30px -10px #5B32E8CC}
+.solutions-cta span{transition:transform .2s}
+.solutions-cta:hover span{transform:translateX(3px)}
+.solutions-cta:focus-visible{outline:3px solid var(--v400);outline-offset:4px}
+.solution h3{transition:color .25s}
+.solution:hover h3{color:var(--v700)}
+@media(max-width:760px){.solutions-bottom{flex-direction:column;align-items:flex-start;gap:18px;padding:22px}.solutions-bottom p>span{font-size:18px}.solutions-cta{width:100%;justify-content:center}}

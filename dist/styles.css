@@ -428,7 +428,7 @@ footer{background:var(--v50)}
 .automation-logo-group{display:flex;gap:18px;padding-right:18px;flex-shrink:0}
 .automation-logo{width:68px;height:68px;border-radius:20px;background:var(--v100);border:1px solid #FFFFFF33;display:grid;place-items:center;flex-shrink:0;box-shadow:inset 0 2px 2px #FFFFFF66;transition:transform .25s,box-shadow .25s}.automation-logo:hover{transform:translateY(-5px) scale(1.06);box-shadow:inset 0 2px 2px #FFFFFF66,0 10px 22px -8px #00000066}
 .automation-logo img{width:32px;height:32px;object-fit:contain}
-.automation-hub{position:absolute;left:50%;top:87px;transform:translateX(-50%);width:148px;height:148px;border-radius:50%;background:transparent;border:1px solid var(--v400);display:grid;place-items:center;box-shadow:0 0 45px #9B8AF04D,inset 0 0 32px #9B8AF033;z-index:2;backdrop-filter:blur(2px)}
+.automation-hub{position:absolute;left:50%;top:87px;transform:translateX(-50%);width:148px;height:148px;border-radius:50%;background:color-mix(in srgb,var(--v950) 45%,transparent);border:1px solid var(--v400);display:grid;place-items:center;box-shadow:0 0 45px #9B8AF04D,inset 0 0 32px #9B8AF033;z-index:2;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
 .automation-hub img{width:65px;height:65px;filter:brightness(0) invert(1);object-fit:contain}
 .automation-stem{position:absolute;top:235px;bottom:0;left:calc(50% - 1px);width:2px;background:var(--v400);box-shadow:0 0 10px var(--v400)}
 .automation-process{width:min(1040px,calc(100% - 64px));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding-top:40px;position:relative}

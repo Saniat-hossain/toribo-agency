@@ -542,7 +542,7 @@ footer{background:var(--v50)}
 .approach-table tbody th{font-weight:400;text-align:left;padding-left:24px}
 .approach-table td{text-align:center}
 .approach-table tbody tr:not(.approach-toribo) th,.approach-table tbody tr:not(.approach-toribo) td{border-bottom:1px solid #9B8AF026}
-.approach-table .approach-toribo th,.approach-table .approach-toribo td{background:var(--v900);border-top:1px solid var(--v400);border-bottom:1px solid var(--v400);padding-top:27px;padding-bottom:27px}
+.approach-table .approach-toribo th,.approach-table .approach-toribo td{background:linear-gradient(180deg,color-mix(in srgb,var(--v600) 20%,var(--v900)),var(--v900) 72%);border-top:1px solid var(--v400);border-bottom:1px solid var(--v400);padding-top:27px;padding-bottom:27px;box-shadow:inset 0 1px 0 #FFFFFF14}
 .approach-table .approach-toribo th{border-left:1px solid var(--v400);border-radius:18px 0 0 18px}
 .approach-table .approach-toribo td:last-child{border-right:1px solid var(--v400);border-radius:0 18px 18px 0}
 .approach-identity{display:flex;gap:16px;align-items:center}
@@ -589,3 +589,19 @@ footer{background:var(--v50)}
 @media(prefers-reduced-motion:reduce){.consult-section *{transition:none!important}}
 .consult-form{margin-top:0}.consult-form label{margin-bottom:0}.consult-chips input{margin:0}.consult-submit .btn{width:auto;white-space:nowrap}.consult-ribbon img{display:block}
 @media(max-width:430px){.consult-submit .btn{width:100%;white-space:normal}}
+
+/* --- approach table: staggered reveal + check pop --- */
+.motion-ready .approach-table tbody tr{opacity:0;transform:translateY(18px)}
+.motion-ready .approach-table-wrap.is-visible tbody tr{animation:approach-row-in .62s cubic-bezier(.2,.65,.3,1) forwards;animation-delay:var(--row-delay,0ms)}
+@keyframes approach-row-in{to{opacity:1;transform:translateY(0)}}
+.motion-ready .approach-check{opacity:0;transform:scale(.4)}
+.motion-ready .approach-table-wrap.is-visible .approach-check{animation:approach-check-pop .5s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:var(--check-delay,200ms)}
+@keyframes approach-check-pop{to{opacity:1;transform:scale(1)}}
+.approach-check{box-shadow:0 4px 14px -4px #5B32E8AA}
+.approach-table tbody tr:not(.approach-toribo){transition:background .25s}
+.approach-table tbody tr:not(.approach-toribo):hover .approach-neutral{color:var(--v50)}
+.approach-neutral{transition:color .25s}
+.approach-table thead th{transition:color .25s}
+@media(prefers-reduced-motion:reduce){
+.motion-ready .approach-table tbody tr,.motion-ready .approach-check{opacity:1;transform:none;animation:none}
+}

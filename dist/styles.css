@@ -135,7 +135,7 @@ th:nth-child(2),td:nth-child(2){background:var(--accent-soft)}
 /* Shared violet roles — final component assignments. */
 body{color:var(--v950)}
 .eyebrow,h1 em,h2 em,.accent,.package-icon,.benefit-grid article>span,.process span,.stars{color:var(--v600)}
-a:not(.btn):not(.brand):not(.bottom-nav a):hover{color:var(--v700)}
+a:not(.btn):not(.button):not(.brand):not(.approach-cta):not(.benefit-analysis-link):not(.bottom-nav a):hover{color:var(--v700)}
 button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline-color:var(--focus-ring)}
 .btn.ink,.btn.primary,.featured .btn,.bottom-nav .nav-cta{background:var(--v600);color:var(--card);border-color:var(--v600)}
 .btn.ink:hover,.btn.primary:hover,.featured .btn:hover,.bottom-nav .nav-cta:hover{background:var(--v700);color:var(--card);border-color:var(--v700)}
@@ -482,7 +482,7 @@ footer{background:var(--v50)}
 .benefit-analysis .benefit-tile-copy p{max-width:380px}
 .benefit-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
 .benefit-tags>span{padding:6px 10px;border-radius:7px;background:#FFFFFFA6;color:var(--v900);font:500 11px/1.4 var(--sans)}
-.benefit-analysis-link{position:absolute;bottom:24px;left:26px;display:inline-flex;align-items:center;gap:9px;color:var(--v600)!important;font:600 13.5px var(--sans);text-decoration:none;background:#FFFFFFF2!important;border:1px solid color-mix(in srgb,var(--v600) 20%,transparent);padding:13px 20px;border-radius:999px;box-shadow:0 6px 18px -9px #5B32E866;transition:transform .2s,box-shadow .25s,background .25s,color .25s,border-color .25s}.benefit-analysis-link:hover{background:var(--v600)!important;color:#fff!important;border-color:var(--v600);transform:translateY(-2px);box-shadow:0 14px 28px -8px #5B32E8A6}.benefit-analysis-link span{transition:transform .2s}.benefit-analysis-link:hover span{transform:translateX(3px)}
+.benefit-analysis-link{position:absolute;bottom:24px;left:26px;display:inline-flex;align-items:center;gap:9px;color:var(--v600);font:600 13.5px var(--sans);text-decoration:none;background:#FFFFFFF2;border:1px solid color-mix(in srgb,var(--v600) 20%,transparent);padding:13px 20px;border-radius:999px;box-shadow:0 6px 18px -9px #5B32E866;transition:transform .2s,box-shadow .25s,background .25s,color .25s,border-color .25s}.benefit-analysis-link:hover{background:var(--v600);color:#fff;border-color:var(--v600);transform:translateY(-2px);box-shadow:0 14px 28px -8px #5B32E8A6}.benefit-analysis-link span{transition:transform .2s}.benefit-analysis-link:hover span{transform:translateX(3px)}
 .benefit-analysis-link:focus-visible{outline:3px solid var(--v400);outline-offset:3px}
 .benefit-connected{background:var(--blue)}
 .benefit-workflow{margin:20px 20px 0;background:var(--v950);color:var(--v50);border-radius:12px 12px 0 0;border:1px solid var(--v400);box-shadow:0 12px 26px #1B11451A;overflow:hidden}
@@ -561,7 +561,7 @@ footer{background:var(--v50)}
 .approach-cta:focus-visible{outline:3px solid var(--v400);outline-offset:4px}
 .approach-footnote{font:400 11px/1.7 var(--sans);color:var(--v400);margin:18px 0 0;text-align:center}
 .approach-scroll-hint{display:none}
-@media(hover:hover){.approach-cta:hover{background:var(--v700);transform:translateY(-2px)}.approach-table tbody tr:not(.approach-toribo):hover{background:#9B8AF008}}
+@media(hover:hover){.approach-cta:hover{background:var(--v700);color:#fff;transform:translateY(-2px);box-shadow:0 12px 26px -10px #5B32E8CC}.approach-table tbody tr:not(.approach-toribo):hover{background:#9B8AF008}}
 @media(max-width:1000px){.approach-heading{gap:28px}.approach-heading>p{font-size:14px}.approach-scroll-hint{display:block;color:var(--v400);font:400 12px var(--sans);margin-bottom:18px}.approach-wrap{width:calc(100% - 40px)}}
 @media(max-width:700px){.approach-section{padding:60px 0 46px}.approach-wrap{width:calc(100% - 36px)}.approach-heading{display:block;margin-bottom:29px}.approach-heading h2{font-size:39px}.approach-heading>p{margin-top:22px;font-size:15px;max-width:none}.approach-heading>p br{display:none}.approach-bottom{align-items:flex-start;flex-direction:column;padding:22px;gap:18px}.approach-cta{width:100%}.approach-table{min-width:900px}.approach-footnote{font-size:12px;text-align:left}}
 @media(prefers-reduced-motion:reduce){.approach-cta{transition:none}.approach-cta:hover{transform:none}}

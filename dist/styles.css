@@ -448,13 +448,13 @@ footer{background:var(--v50)}
 .automation-actions{text-align:center;margin-top:34px;display:flex;align-items:center;flex-direction:column;gap:12px}
 .automation-actions .button{background:var(--v600);color:white;border:1px solid var(--v400);box-shadow:0 8px 22px #5B32E833;padding:14px 22px;border-radius:10px;font:600 14px var(--sans)}
 .automation-actions>p{color:var(--v100);font:500 18px/1.6 var(--sans);letter-spacing:-.01em;margin:6px 0 0}
-.automation-pause{color:var(--v100);font:400 12px/1.5 var(--sans);cursor:pointer;padding:5px 10px;border-radius:5px;text-decoration:underline;text-underline-offset:4px}
+.automation-pause{position:absolute;top:22px;right:max(24px,calc((100vw - 1120px)/2));z-index:4;margin:0;padding:4px 11px;min-height:30px;display:flex;align-items:center;cursor:pointer;border:1px solid color-mix(in srgb,var(--v300) 45%,transparent);border-radius:20px;color:var(--v50);background:color-mix(in srgb,var(--v950) 70%,transparent);font:400 10px/1 var(--sans);letter-spacing:.02em;user-select:none;transition:border-color .2s,background .2s}.automation-pause:hover{border-color:var(--v400);background:color-mix(in srgb,var(--v900) 85%,transparent)}
 .automation-motion-toggle{position:absolute;width:1px;height:1px;opacity:0}
 .when-paused{display:none}
 .automation-motion-toggle:checked~.automation-network .automation-logo-row{animation-play-state:paused}
-.automation-motion-toggle:checked~.automation-actions .when-running{display:none}
-.automation-motion-toggle:checked~.automation-actions .when-paused{display:inline}
-.automation-motion-toggle:focus-visible~.automation-actions .automation-pause{outline:2px solid var(--v400);outline-offset:3px}
+.automation-motion-toggle:checked~.automation-pause .when-running{display:none}
+.automation-motion-toggle:checked~.automation-pause .when-paused{display:inline}
+.automation-motion-toggle:focus-visible~.automation-pause{outline:2px solid var(--v400);outline-offset:3px}
 .automation-logo-bands:hover .automation-logo-row{animation-play-state:paused}
 @keyframes automation-drift{to{transform:translateX(-33.3333%)}}
 @media(hover:hover){.automation-step:hover{transform:translateY(-5px);border-color:var(--v400);box-shadow:0 12px 32px #9B8AF01A}.automation-actions .button:hover{background:var(--v700)}}

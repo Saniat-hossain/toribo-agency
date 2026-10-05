@@ -671,3 +671,8 @@ footer{background:var(--v50)}
 
 .consult-other{display:block;margin-top:14px}
 .consult-other input{font-size:11.5px!important}
+
+/* fill the dead space under the left column by anchoring the person card to the bottom */
+.consult-intro{display:flex;flex-direction:column}
+.consult-person{margin-top:auto}
+@media(max-width:900px){.consult-person{margin-top:22px}}

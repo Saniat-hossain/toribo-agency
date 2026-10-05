@@ -594,8 +594,8 @@ footer{background:var(--v50)}
 .motion-ready .approach-table tbody tr{opacity:0;transform:translateY(18px)}
 .motion-ready .approach-table-wrap.is-visible tbody tr{animation:approach-row-in .62s cubic-bezier(.2,.65,.3,1) forwards;animation-delay:var(--row-delay,0ms)}
 @keyframes approach-row-in{to{opacity:1;transform:translateY(0)}}
-.motion-ready .approach-check{opacity:0;transform:scale(.4)}
-.motion-ready .approach-table-wrap.is-visible .approach-check{animation:approach-check-pop .5s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:var(--check-delay,200ms)}
+.motion-ready .approach-mark.yes{opacity:0;transform:scale(.4)}
+.motion-ready .approach-table-wrap.is-visible .approach-mark.yes{animation:approach-check-pop .5s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:var(--check-delay,200ms)}
 @keyframes approach-check-pop{to{opacity:1;transform:scale(1)}}
 .approach-check{box-shadow:0 4px 14px -4px #5B32E8AA}
 .approach-table tbody tr:not(.approach-toribo){transition:background .25s}
@@ -603,5 +603,21 @@ footer{background:var(--v50)}
 .approach-neutral{transition:color .25s}
 .approach-table thead th{transition:color .25s}
 @media(prefers-reduced-motion:reduce){
-.motion-ready .approach-table tbody tr,.motion-ready .approach-check{opacity:1;transform:none;animation:none}
+.motion-ready .approach-table tbody tr,.motion-ready .approach-mark.yes{opacity:1;transform:none;animation:none}
 }
+
+/* --- comparison table: scannable marks, row icons --- */
+.approach-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;margin:0 auto 9px;font:400 16px/1 var(--sans)}
+.approach-mark.yes{background:var(--v600);color:#fff;box-shadow:0 5px 16px -5px #5B32E8CC}
+.approach-mark.no{background:#E5484D1A;color:#E5484D;border:1px solid #E5484D40;font-size:14px}
+.approach-cell-label{display:block;font:400 11.5px/1.5 var(--sans);color:var(--v100);opacity:.8;max-width:150px;margin:0 auto}
+.approach-toribo .approach-cell-label{color:var(--v50);font-weight:500;opacity:1}
+.approach-rowicon{display:grid;place-items:center;width:54px;height:54px;border-radius:15px;background:#9B8AF014;border:1px solid #9B8AF033;color:var(--v300);flex-shrink:0;transition:border-color .25s,color .25s,background .25s}
+.approach-rowicon svg{width:22px;height:22px}
+.approach-table tbody tr:not(.approach-toribo):hover .approach-rowicon{border-color:var(--v400);color:var(--v100);background:#9B8AF021}
+.approach-identity p{max-width:330px}
+.approach-table thead th{font-size:12.5px;font-weight:600;color:var(--v100);letter-spacing:.01em}
+.approach-table thead th:first-child{font-weight:500;color:var(--v400)}
+@media(max-width:700px){.approach-cell-label{font-size:10.5px}.approach-rowicon{width:46px;height:46px;border-radius:13px}}
+
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;background:none!important}

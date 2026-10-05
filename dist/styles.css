@@ -461,9 +461,7 @@ footer{background:var(--v50)}
 @media(max-width:1000px){.automation-process{gap:12px;width:calc(100% - 40px)}.automation-step{padding:20px 14px}.automation-step-title h3{font-size:15px}.automation-step-title>span{display:none}}
 @media(max-width:760px){.automation-ecosystem{padding:48px 0}.automation-intro h2{font-size:34px}.automation-mobile-break{display:block}.automation-desktop-break{display:none}.automation-intro>p:last-child{font-size:15px}.automation-network{padding-top:40px;height:229px}.automation-logo{width:58px;height:58px;border-radius:17px}.automation-logo-group{gap:14px;padding-right:14px}.automation-logo img{width:28px;height:28px}.automation-hub{width:122px;height:122px;top:60px}.automation-hub img{width:54px;height:54px}.automation-stem{top:182px}.automation-process{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding-top:28px;width:calc(100% - 36px)}.automation-branches{left:24%;right:24%;height:28px}.automation-branches:before,.automation-branches:after{display:none}.automation-step{padding:20px 16px}.automation-step-title h3{font-size:16px}.automation-step-icons{gap:6px}.automation-step-icons>span{width:35px;height:35px}.automation-step-icons img{width:21px;height:21px}}
 @media(max-width:380px){.automation-process{grid-template-columns:1fr}.automation-branches{display:none}.automation-step-title h3{font-size:18px}.automation-process{padding-top:0}}
-@media(prefers-reduced-motion:reduce){.automation-logo-row{animation:none}.automation-logo-bands{overflow-x:auto;mask-image:none}.automation-pause{display:none}.automation-step{transition:none}.automation-step:hover{transform:none}}
-
-.automation-logo-group{min-width:100vw}
+@media(prefers-reduced-motion:reduce){.automation-logo-row{animation:none}.automation-logo-bands{overflow-x:auto;mask-image:none}.automation-logo-group{min-width:100vw}.automation-pause{display:none}.automation-step{transition:none}.automation-step:hover{transform:none}}
 
 /* Why choose Toribo — service-led benefits bento. */
 .toribo-benefits{background:var(--bg);padding:80px 0 90px}

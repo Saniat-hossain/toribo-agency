@@ -19,7 +19,7 @@ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
 if('IntersectionObserver' in window){
  if(!reduced.matches){document.documentElement.classList.add('motion-ready');const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target);}}),{threshold:0.07,rootMargin:'0px 0px -25px 0px'});document.querySelectorAll('.reveal').forEach(el=>{if(el.parentElement.matches('.team-grid,.solution-grid,.benefit-grid,.testimonial-grid,.package-grid'))el.style.setProperty('--delay',`${Array.from(el.parentElement.children).indexOf(el)%4*65}ms`);revealObserver.observe(el);});reduced.addEventListener('change',event=>{if(event.matches)document.documentElement.classList.remove('motion-ready');});}
 }
-const navLinks=[...document.querySelectorAll('.bottom-nav a')];const navSections=navLinks.map(link=>document.querySelector(link.getAttribute('href')));let scheduled=false;
+const navLinks=[...document.querySelectorAll('.bottom-nav a')].filter(link=>(link.getAttribute('href')||'').startsWith('#'));const navSections=navLinks.map(link=>document.querySelector(link.getAttribute('href')));let scheduled=false;
 function updateNav(){scheduled=false;let current=0;navSections.forEach((section,i)=>{if(section.getBoundingClientRect().top<=window.innerHeight*.38)current=i;});navLinks.forEach((link,i)=>{link.classList.toggle('active',i===current);if(i===current)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});}
 window.addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(updateNav);}},{passive:true});updateNav();
 const form=document.getElementById('brief-form');

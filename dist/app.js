@@ -8,7 +8,7 @@ const faqData = [
  ['Is this a one-time project or ongoing support?','Both are possible. Some businesses need one system built once; others want it kept running and improved as they grow. We scope that with you rather than pushing you into a retainer.']
 ];
 const faqRoot = document.querySelector('.faqs');
-faqData.forEach(([question,answer],i)=>{
+if(faqRoot) faqData.forEach(([question,answer],i)=>{
  const item=document.createElement('article');item.className='faq-item';item.style.setProperty('--faq-delay',(i*45)+'ms');
  const heading=document.createElement('h3'); const button=document.createElement('button');button.className='faq-button';button.type='button';button.setAttribute('aria-expanded','false');button.setAttribute('aria-controls',`faq-answer-${i}`);button.append(document.createTextNode(question));const symbol=document.createElement('span');symbol.textContent='⌄';symbol.setAttribute('aria-hidden','true');button.append(symbol);heading.append(button);
  const panel=document.createElement('div');panel.className='faq-answer';panel.id=`faq-answer-${i}`;panel.inert=true;const inner=document.createElement('div');const p=document.createElement('p');p.textContent=answer;inner.append(p);panel.append(inner);item.append(heading,panel);faqRoot.append(item);
@@ -25,6 +25,7 @@ window.addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnima
 const form=document.getElementById('brief-form');
 const result=document.getElementById('brief-result');
 let brief='';
+if(form){
 form.addEventListener('submit',event=>{
  event.preventDefault();
  const data=new FormData(form);
@@ -39,3 +40,4 @@ document.getElementById('download-brief').addEventListener('click',()=>{
  const url=URL.createObjectURL(new Blob([brief],{type:'text/plain;charset=utf-8'}));
  const link=document.createElement('a');link.href=url;link.download='Toribo-Business-Analysis-Brief.txt';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
+}

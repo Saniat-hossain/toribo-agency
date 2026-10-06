@@ -860,3 +860,53 @@ header .brand{font-size:20px}
 .bottom-nav a.active:after,.bottom-nav a.active-link:after{content:'';position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:5px;height:5px;border-radius:50%;background:var(--v600)}
 @media(max-width:1040px){.bottom-nav{gap:20px}.bottom-nav a{font-size:14px}}
 @media(max-width:900px){.header-inner{grid-template-columns:1fr auto;padding:12px 0}}
+
+/* ===== Services page ===== */
+.svc-hero{background:linear-gradient(180deg,var(--v950),var(--v900));color:#fff;padding:92px 0 78px;text-align:center}
+.svc-hero-inner{max-width:780px}
+.svc-hero .eyebrow{color:var(--v300)}
+.svc-hero h1{font:600 clamp(34px,4.4vw,56px)/1.13 var(--heading);letter-spacing:-.045em;margin:0;color:#fff}
+.svc-hero h1 em{color:var(--v300)}
+.svc-hero-lead{max-width:580px;margin:22px auto 30px;font-size:16px;line-height:1.75;color:#EAE7FCb8}
+.svc-hero .btn{background:var(--v600);color:#fff;border-radius:999px;padding:15px 26px;gap:10px}
+.svc-hero .btn:hover{background:var(--v700);color:#fff}
+
+.svc-list-section{background:var(--bg)}
+.svc-list{display:grid;gap:26px}
+.svc-card{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;background:var(--card);border:1px solid var(--border);border-radius:24px;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+.svc-card:hover{border-color:var(--v300);box-shadow:0 22px 50px -32px #5B32E880}
+.svc-card:nth-child(even) .svc-visual{order:2}
+.svc-visual{margin:0;background:var(--v50);min-height:290px}
+.svc-visual img{width:100%;height:100%;object-fit:cover;display:block}
+.svc-body{padding:34px 36px}
+.svc-head{display:flex;align-items:baseline;gap:14px;margin-bottom:12px}
+.svc-kicker{font:600 12px/1 var(--sans);letter-spacing:.14em;color:var(--v400)}
+.svc-card h2{font:600 28px/1.2 var(--heading);letter-spacing:-.035em;margin:0;color:var(--v950)}
+.svc-desc{font-size:15px;line-height:1.7;color:var(--muted);margin:0 0 22px;max-width:560px}
+.svc-items{list-style:none;margin:0 0 24px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:9px 24px}
+.svc-items li{position:relative;padding-left:22px;font-size:13.5px;line-height:1.55;color:var(--v950)}
+.svc-items li:before{content:'';position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:2px;background:var(--v600);opacity:.65}
+.svc-tools{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--border)}
+.svc-tools-label{font:600 10px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.svc-tools span[title]{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:var(--v50);border:1px solid var(--border)}
+.svc-tools img{width:22px;height:22px;object-fit:contain}
+@media(max-width:900px){.svc-card{grid-template-columns:1fr}.svc-card:nth-child(even) .svc-visual{order:0}.svc-visual{min-height:200px}.svc-body{padding:26px 24px}.svc-card h2{font-size:24px}.svc-items{grid-template-columns:1fr}}
+
+.svc-included-section{background:var(--v50)}
+.svc-included-section .section-heading{text-align:center;max-width:620px;margin:0 auto 42px}
+.svc-included{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc-inc{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px 22px}
+.svc-inc strong{display:block;font:600 16px var(--heading);color:var(--v950);margin-bottom:9px;letter-spacing:-.02em}
+.svc-inc span{font-size:13.5px;line-height:1.65;color:var(--muted)}
+@media(max-width:860px){.svc-included{grid-template-columns:1fr 1fr}}
+
+.svc-cta-section{background:var(--v950)}
+.svc-cta{text-align:center;max-width:680px;margin-inline:auto}
+.svc-cta h2{font:600 clamp(28px,3.4vw,42px)/1.16 var(--heading);letter-spacing:-.04em;color:#fff;margin:0}
+.svc-cta h2 em{color:var(--v300)}
+.svc-cta p{margin:18px auto 28px;color:#EAE7FCb3;font-size:15px;max-width:480px}
+.svc-cta-row{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap}
+.svc-cta-row .btn{background:var(--v600);color:#fff;border-radius:999px;padding:15px 26px;gap:10px}
+.svc-cta-row .btn:hover{background:var(--v700);color:#fff}
+.svc-cta-alt{color:var(--v300);font:600 13.5px var(--sans);border-bottom:1px solid #C488F855;padding-bottom:3px}
+.svc-cta-alt:hover{color:#fff}

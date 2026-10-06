@@ -690,11 +690,35 @@ footer{background:var(--v50)}
 .packages-section .section-heading{text-align:center;max-width:660px;margin:0 auto}
 .packages-section .section-heading>p:last-child:not(.eyebrow){position:static;max-width:none;margin:16px auto 0;font-size:15.5px;color:var(--muted)}
 .package-note{font-size:12px;line-height:1.6;margin:-6px 0 22px;color:var(--muted)}
-.featured .package-note{color:var(--accent-soft)}
-.featured .eyebrow{color:var(--accent-soft)}
-.featured .package-icon{color:#fff}
-.featured .quote{color:#fff}
+
+
+
+
 .package .btn{justify-content:center;gap:0}
-.package-label{color:#fff}
+
 .packages-footnote{text-align:center;max-width:640px;margin:30px auto 0;font-size:13px;line-height:1.7;color:var(--muted)}
 @media(max-width:700px){.packages-footnote{font-size:12px}}
+
+/* --- packages: readable contrast + polish --- */
+.package{padding:40px 36px;border-radius:24px;display:flex;flex-direction:column}
+.package-icon{font-size:30px;margin-bottom:20px;color:var(--v600)}
+.package .eyebrow{color:var(--v600);letter-spacing:.12em;margin-bottom:12px}
+.package h3{font-size:31px;letter-spacing:-.035em;margin-bottom:12px}
+.package>p:not(.eyebrow):not(.package-note){font-size:15px;line-height:1.65;color:var(--muted);margin-top:0}
+.package ul{padding:24px 0 22px;margin:22px 0 0;border-top:1px solid var(--border);border-bottom:0;font-size:14px}
+.package li{margin:0;padding:9px 0 9px 28px;position:relative;line-height:1.6;color:var(--v950)}
+.package li:before{content:'✓';position:absolute;left:0;top:9px;margin:0;color:var(--v600);font-size:13px;font-weight:700}
+.package-price-label{display:block;font-size:10px;font-weight:600;letter-spacing:.12em;color:var(--muted);margin-bottom:6px}
+.package .quote{font-size:30px;font-weight:600;letter-spacing:-.03em;margin:0 0 10px;color:var(--v950)}
+.package-note{font-size:12.5px;line-height:1.6;margin:0 0 26px;color:var(--muted)}
+.package .btn{margin-top:auto}
+
+/* featured card: light lavender ground, violet accents, clearly distinct */
+.package.featured{background:linear-gradient(180deg,#FFFFFF,var(--v100) 42%);border-color:var(--v300);box-shadow:0 18px 44px -24px #5B32E866}
+.package.featured .eyebrow,.package.featured .package-icon{color:var(--v700)}
+.package.featured .quote{color:var(--v950)}
+.package.featured .package-note{color:var(--v900);opacity:.75}
+.package.featured ul{border-top-color:var(--v300)}
+.package.featured li:before{color:var(--v700)}
+.package-label{top:20px;right:20px;background:var(--v600);border-color:var(--v600);color:#fff;font-weight:600;letter-spacing:.08em;padding:6px 12px}
+@media(max-width:700px){.package{padding:30px 24px}.package h3{font-size:27px}.package .quote{font-size:26px}}

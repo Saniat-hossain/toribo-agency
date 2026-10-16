@@ -4,7 +4,8 @@
   "buildCommand": "",
   "installCommand": "",
   "outputDirectory": "dist",
-  "rewrites": [
-    { "source": "/((?!assets/|soon.html).*)", "destination": "/soon.html" }
+  "routes": [
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/(.*)", "dest": "/soon.html" }
   ]
 }

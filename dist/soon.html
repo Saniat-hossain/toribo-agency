@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1B1145">
+<meta name="robots" content="noindex">
+<meta name="description" content="Toribo Agency — our site is being improved. Back shortly.">
+<title>Toribo Agency — Back shortly</title>
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+  :root{
+    --v600:#5B32E8;--v700:#4A24C4;--v300:#C488F8;--v400:#9B8AF0;
+    --v900:#251A5E;--v950:#1B1145;--v100:#EAE7FC;--v50:#F2EFFE;
+    --sans:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
+    --heading:'Manrope','Inter',system-ui,sans-serif;
+    --serif:'Playfair Display',Georgia,serif;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;min-height:100%;display:grid;place-items:center;padding:32px;
+    font-family:var(--sans);color:#fff;background:var(--v950);
+    background-image:
+      radial-gradient(ellipse at 50% -10%,rgba(91,50,232,.55),transparent 58%),
+      radial-gradient(ellipse at 10% 110%,rgba(155,138,240,.22),transparent 45%);
+    -webkit-font-smoothing:antialiased;
+  }
+  .grid{position:fixed;inset:0;pointer-events:none;
+    background-image:
+      linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);
+    background-size:68px 68px;
+    mask-image:linear-gradient(rgba(0,0,0,.8),transparent 72%);
+    -webkit-mask-image:linear-gradient(rgba(0,0,0,.8),transparent 72%);
+  }
+  main{position:relative;width:min(620px,100%);text-align:center}
+  .brand{display:inline-flex;align-items:center;gap:9px;font:800 20px var(--heading);letter-spacing:-.04em;margin-bottom:40px}
+  .brand i{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:var(--v600);color:#fff;font:800 20px/1 var(--heading);font-style:normal;letter-spacing:-.08em;padding-right:2px}
+  .brand span{color:var(--v300);font-weight:400}
+  .pill{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(196,136,248,.42);border-radius:999px;padding:8px 16px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--v100);margin-bottom:26px}
+  .pill b{width:7px;height:7px;border-radius:50%;background:var(--v300);animation:pulse 1.9s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.72)}}
+  h1{font-family:var(--heading);font-weight:600;font-size:clamp(30px,5.4vw,50px);line-height:1.12;letter-spacing:-.045em;margin:0}
+  h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--v300)}
+  p.lead{margin:22px auto 0;max-width:460px;font-size:16px;line-height:1.75;color:rgba(234,231,252,.74)}
+  .bar{width:min(300px,78%);height:5px;border-radius:999px;background:rgba(255,255,255,.1);overflow:hidden;margin:36px auto 0}
+  .bar i{display:block;height:100%;width:42%;border-radius:999px;background:linear-gradient(90deg,var(--v400),var(--v300));animation:slide 2.6s ease-in-out infinite}
+  @keyframes slide{0%{transform:translateX(-105%)}100%{transform:translateX(255%)}}
+  .mail{display:inline-block;margin-top:36px;font-size:14px;color:var(--v300);text-decoration:none;border-bottom:1px solid rgba(196,136,248,.4);padding-bottom:3px}
+  .mail:hover{color:#fff;border-color:#fff}
+  footer{margin-top:44px;font-size:12px;color:rgba(234,231,252,.42)}
+  @media (prefers-reduced-motion:reduce){.pill b,.bar i{animation:none}.bar i{width:55%;transform:none}}
+</style>
+</head>
+<body>
+<div class="grid" aria-hidden="true"></div>
+<main>
+  <div class="brand"><i>t.</i>toribo<span>.agency</span></div>
+  <div class="pill"><b aria-hidden="true"></b>WORK IN PROGRESS</div>
+  <h1>We're making this<br><em>a lot better.</em></h1>
+  <p class="lead">Our site is being rebuilt so it explains clearly what we do and how we can help your business. It will be back shortly.</p>
+  <div class="bar" aria-hidden="true"><i></i></div>
+  <a class="mail" href="mailto:hello@toribo.agency">Need something now? hello@toribo.agency</a>
+  <footer>Toribo Agency &middot; AI automation &middot; Bangladesh</footer>
+</main>
+</body>
+</html>

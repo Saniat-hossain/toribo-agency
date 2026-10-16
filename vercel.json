@@ -3,5 +3,8 @@
   "framework": null,
   "buildCommand": "",
   "installCommand": "",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/((?!assets/|soon.html).*)", "destination": "/soon.html" }
+  ]
 }
